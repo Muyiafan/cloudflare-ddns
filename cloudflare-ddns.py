@@ -65,7 +65,7 @@ def getIPs():
                 shown_ipv4_warning = True
                 print("🧩 IPv4 not detected")
             if purgeUnknownRecords:
-                deleteEntries("A")
+                # deleteEntries("A")
     if ipv6_enabled:
         try:
             aaaa = requests.get(
@@ -78,7 +78,7 @@ def getIPs():
                 shown_ipv6_warning = True
                 print("🧩 IPv6 not detected")
             if purgeUnknownRecords:
-                deleteEntries("AAAA")
+                # deleteEntries("AAAA")
     ips = {}
     if(a is not None):
         ips["ipv4"] = {
